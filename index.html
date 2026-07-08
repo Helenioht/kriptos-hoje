@@ -13,13 +13,13 @@
         }
 
         body {
-            /* URL direta da imagem para garantir a renderiza√ß√£o como plano de fundo */
+            /* URL direta da imagem para garantir a renderizaÁ„o como plano de fundo */
             background-image: url('https://i.ibb.co/zhZLcTc5/image.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-color: #121212; /* Fallback caso falte conex√£o */
+            background-color: #121212; /* Fallback caso falte conex„o */
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -65,7 +65,7 @@
             display: block;
         }
 
-        /* TELA 1: COTA√á√ïES */
+        /* TELA 1: COTA«’ES */
         .crypto-card {
             background: rgba(20, 20, 20, 0.85);
             border: 1px solid rgba(255, 255, 255, 0.12);
@@ -102,7 +102,7 @@
             margin-top: 15px;
         }
 
-        /* TECLAS 3D & BOT√ïES GERAIS */
+        /* TECLAS 3D & BOT’ES GERAIS */
         .btn-3d {
             flex: 1;
             padding: 15px;
@@ -249,7 +249,7 @@
     </header>
 
     <main>
-        <!-- TELA 1: COTA√á√ïES -->
+        <!-- TELA 1: COTA«’ES -->
         <section id="screen-quotes" class="screen active">
             <div class="crypto-card">
                 <div class="crypto-info">
@@ -265,7 +265,7 @@
             </div>
             <div class="crypto-card">
                 <div class="crypto-info">
-                    <h2>D√≥lar Comercial (USD)</h2>
+                    <h2>DÛlar Comercial (USD)</h2>
                     <p id="usd-price">Carregando...</p>
                 </div>
             </div>
@@ -278,7 +278,7 @@
 
         <!-- TELA 2: CALCULADORA -->
         <section id="screen-calc" class="screen">
-            <button class="btn-3d btn-return" onclick="playAudio(); switchScreen('screen-quotes')">‚Üê Voltar para Cota√ß√µes</button>
+            <button class="btn-3d btn-return" onclick="playAudio(); switchScreen('screen-quotes')">? Voltar para CotaÁıes</button>
             
             <div class="calc-container">
                 <div class="calc-display">
@@ -287,35 +287,35 @@
                 </div>
                 
                 <div class="calc-grid">
-                    <!-- Linha 1: Mem√≥ria e Limpeza -->
+                    <!-- Linha 1: MemÛria e Limpeza -->
                     <button class="btn-3d btn-sci" onclick="pressKey('MC')">MC</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('MR')">MR</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('M+')">M+</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('M-')">M-</button>
                     <button class="btn-3d btn-exit" onclick="pressKey('C')">C</button>
 
-                    <!-- Linha 2: Fun√ß√µes Cient√≠ficas B√°sicas -->
+                    <!-- Linha 2: FunÁıes CientÌficas B·sicas -->
                     <button class="btn-3d btn-sci" onclick="pressKey('sin')">sin</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('cos')">cos</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('tan')">tan</button>
-                    <button class="btn-3d btn-sci" onclick="pressKey('sqrt')">‚àö</button>
-                    <button class="btn-3d btn-op" onclick="pressKey('/')">√∑</button>
+                    <button class="btn-3d btn-sci" onclick="pressKey('sqrt')">?</button>
+                    <button class="btn-3d btn-op" onclick="pressKey('/')">˜</button>
 
-                    <!-- Linha 3: N√∫meros e Opera√ß√µes -->
+                    <!-- Linha 3: N˙meros e OperaÁıes -->
                     <button class="btn-3d" onclick="pressKey('7')">7</button>
                     <button class="btn-3d" onclick="pressKey('8')">8</button>
                     <button class="btn-3d" onclick="pressKey('9')">9</button>
-                    <button class="btn-3d btn-sci" onclick="pressKey('pow')">x ∏</button>
-                    <button class="btn-3d btn-op" onclick="pressKey('*')">√ó</button>
+                    <button class="btn-3d btn-sci" onclick="pressKey('pow')">x?</button>
+                    <button class="btn-3d btn-op" onclick="pressKey('*')">◊</button>
 
-                    <!-- Linha 4: N√∫meros e Opera√ß√µes -->
+                    <!-- Linha 4: N˙meros e OperaÁıes -->
                     <button class="btn-3d" onclick="pressKey('4')">4</button>
                     <button class="btn-3d" onclick="pressKey('5')">5</button>
                     <button class="btn-3d" onclick="pressKey('6')">6</button>
                     <button class="btn-3d btn-sci" onclick="pressKey('log')">log</button>
                     <button class="btn-3d btn-op" onclick="pressKey('-')">-</button>
 
-                    <!-- Linha 5: N√∫meros, Porcentagem e Soma -->
+                    <!-- Linha 5: N˙meros, Porcentagem e Soma -->
                     <button class="btn-3d" onclick="pressKey('1')">1</button>
                     <button class="btn-3d" onclick="pressKey('2')">2</button>
                     <button class="btn-3d" onclick="pressKey('3')">3</button>
@@ -325,7 +325,7 @@
                     <!-- Linha 6: Zero, Ponto e Igual -->
                     <button class="btn-3d" style="grid-column: span 2;" onclick="pressKey('0')">0</button>
                     <button class="btn-3d" onclick="pressKey('.')">,</button>
-                    <button class="btn-3d btn-sci" onclick="pressKey('pi')">œÄ</button>
+                    <button class="btn-3d btn-sci" onclick="pressKey('pi')">?</button>
                     <button class="btn-3d btn-eq" onclick="pressKey('=')">=</button>
                 </div>
             </div>
@@ -337,7 +337,7 @@
     </footer>
 
     <script>
-        // --- SISTEMA DE √ÅUDIO SINTETIZADO (Web Audio API) ---
+        // --- SISTEMA DE ¡UDIO SINTETIZADO (Web Audio API) ---
         let audioCtx = null;
         function playAudio() {
             try {
@@ -361,11 +361,11 @@
                 oscillator.start();
                 oscillator.stop(audioCtx.currentTime + 0.05);
             } catch (e) {
-                console.log("√Åudio indispon√≠vel.");
+                console.log("¡udio indisponÌvel.");
             }
         }
 
-        // --- NAVEGA√á√ÉO ---
+        // --- NAVEGA«√O ---
         function switchScreen(screenId) {
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
             document.getElementById(screenId).classList.add('active');
@@ -378,18 +378,18 @@
             }
         }
 
-        // --- BUSCA DE COTA√á√ïES ---
+        // --- BUSCA DE COTA«’ES ---
         async function fetchQuotes() {
             try {
                 const response = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,BTC-BRL,ETH-BRL');
-                if (!response.ok) throw new Error('Erro de conex√£o');
+                if (!response.ok) throw new Error('Erro de conex„o');
                 const data = await response.json();
 
                 formatAndDisplay('usd-price', data.USDBRL.bid, true);
                 formatAndDisplay('btc-price', data.BTCBRL.bid, true);
                 formatAndDisplay('eth-price', data.ETHBRL.bid, true);
             } catch (error) {
-                console.error("Erro nas cota√ß√µes:", error);
+                console.error("Erro nas cotaÁıes:", error);
                 document.getElementById('usd-price').innerText = "Erro";
                 document.getElementById('btc-price').innerText = "Erro";
                 document.getElementById('eth-price').innerText = "Erro";
@@ -410,7 +410,7 @@
         fetchQuotes();
         setInterval(fetchQuotes, 30000);
 
-        // --- L√ìGICA DA CALCULADORA ---
+        // --- L”GICA DA CALCULADORA ---
         let currentInput = '0';
         let previousInput = '';
         let operation = null;
